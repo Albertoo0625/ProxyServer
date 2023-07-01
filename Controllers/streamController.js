@@ -60,7 +60,7 @@ const handleStream = async (req, res) => {
 
       const ngrokUrl = await ngrok.connect({
         authtoken: '2KVGmlxJUHWrgTXlIU9wtesvpM3_39DmFsdbs5eBcQsustWvy',
-        addr: assignedPort, // Use the available port
+        addr: `https://proxyserver-g583.onrender.com:${assignedPort}`, // Use the available port
         region: 'in', // Replace with your desired ngrok region
       });
 
